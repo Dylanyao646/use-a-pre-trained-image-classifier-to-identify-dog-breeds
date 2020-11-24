@@ -79,7 +79,7 @@ def adjust_results4_isadog(results_dic, dogfile):
         # Processes each line in file until reaching EOF (end-of-file) by 
         # processing line and adding dognames to dognames_dic with while loop
         while line != "":
-            line.rstrip()
+            line = line.rstrip()
             if line not in dognames_dic:
                 dognames_dic[line] = 1
             else:
